@@ -1,0 +1,65 @@
+/* Общий стиль страницы */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    text-align: center;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00ff99;
+    text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+}
+
+#game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#durov {
+    width: 300px;
+    height: auto;
+    border: 5px solid #00ff99;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1; /* Убедитесь, что элемент находится поверх других */
+}
+
+#durov:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 255, 153, 0.5);
+}
+
+#message {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #ffcc00;
+    text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
+}
+
+#click-count {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #00ff99;
+    text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99;
+}
